@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+
+<!--locale-->
+<!DOCTYPE overlay [
+<!ENTITY % overlayDTD SYSTEM "chrome://wiz/locale/overlay.dtd" >
+%overlayDTD;
+]>
+<?xml-stylesheet href="chrome://wiz/skin/default.css" type="text/css"?>
+
+<overlay id="sample" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+	<!--script-->
+	<script type="application/x-javascript" src="chrome://global/content/nsUserSettings.js" />
+	<script type="application/x-javascript" src="chrome://wiz/content/wiz.js" />
+
+
+	<!--command-->
+	<commandset id="mainCommandSet">
+		<command id="cmd_wiz_km_Save"   oncommand="wiz_km_onWizSave();" />
+	</commandset>
+
+	<!--context menu-->
+	<popup id="contentAreaContextMenu">
+		<menuseparator />
+		<menuitem class="menuitem-iconic save_to_wiz_menuitem" id="wizMenuItem1" label="&wiz.km.save;" command="cmd_wiz_km_Save"/>
+	</popup>
+	
+</overlay>

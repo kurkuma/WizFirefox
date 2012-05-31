@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+
+<RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:em="http://www.mozilla.org/2004/em-rdf#">
+	
+	<Description about="urn:mozilla:install-manifest">
+	
+		<em:id>support@wiz.cn</em:id>
+		<em:version>1.00</em:version>
+		<em:name>WizBrother Wiz Plugin</em:name>
+		<em:description>Helps you to save Web pages.</em:description>
+		<em:creator>Wizbrother</em:creator>
+		<em:homepageURL>http://www.wizbrother.com/</em:homepageURL>
+		<em:iconURL>chrome://wiz/skin/wiz.png</em:iconURL>
+		
+		<!-- Firefox -->
+		<em:targetApplication>
+			<Description>
+				<em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
+				<em:minVersion>1.1</em:minVersion>
+				<em:maxVersion>100.0</em:maxVersion>
+			</Description>
+		</em:targetApplication>
+		
+	</Description>
+	
+</RDF>
